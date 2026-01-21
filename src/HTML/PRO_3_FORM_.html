@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .reg {
+            border: 2px solid #333;       /* Adds border */
+            width: 300px;                 /* Fixed width */
+            margin: 50px auto;            /* Centers horizontally */
+            padding: 20px;                /* Space inside */
+            border-radius: 8px;           /* Rounded corners */
+            background-color: #f9f9f9;    /* Light background */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+
+        .reg div {
+            margin-bottom: 15px;          /* Space between fields */
+        }
+
+        .reg input, .reg button {
+            width: 100%;                  /* Full width inputs */
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .reg button {
+            background-color: #4CAF50;    /* Green button */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .reg button:hover {
+            background-color: #45a049;    /* Darker on hover */
+        }
+    </style>
+</head>
+<body>
+<form class="reg">
+    <div>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter name !">
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter Email !">
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password !">
+    </div>
+    <input class="check" type="checkbox">Remeber me
+    <div>
+        <button type="submit">Submit !</button>
+    </div>
+</form>
+</body>
+</html>

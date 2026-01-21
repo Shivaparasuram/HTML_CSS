@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Form container */
+        .reg {
+          border: 2px solid #333;             /* Dark border */
+          width: 300px;                       /* Fixed width */
+          margin: 50px auto;                  /* Center horizontally */
+          padding: 20px;                      /* Inner spacing */
+          border-radius: 8px;                 /* Rounded corners */
+          background-color: #f9f9f9;          /* Light background */
+          box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+          font-family: Arial, sans-serif;     /* Clean font */
+        }
+
+        /* Each field block */
+        .reg div {
+          margin-bottom: 20px;                /* Space between fields */
+        }
+
+        /* Labels */
+        .reg label {
+          display: block;                     /* Puts label above input */
+          font-weight: bold;                  /* Bold text */
+          margin-bottom: 5px;                 /* Space below label */
+        }
+
+        /* Inputs and button */
+        .reg input, .reg button {
+          width: 100%;                        /* Full width */
+          padding: 8px;
+          box-sizing: border-box;             /* Includes padding in width */
+        }
+
+        /* Button styling */
+        .reg button {
+          background-color: #4CAF50;          /* Green button */
+          color: black;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          border-radius: 4px;
+        }
+
+        /* Hover effect */
+        .reg button:hover {
+          background-color: #45a049;          /* Darker green */
+        }
+
+        /* Checkbox alignment */
+
+
+        .reg .checkbox label {
+          margin-left: 8px;
+          font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+<form class="reg" action="#" method="post">
+    <!-- Name -->
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Password -->
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label>
+    </div>
+
+    <!-- Submit button -->
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
